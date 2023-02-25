@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Languages(models.Model):
     language_names = models.TextField(max_length=1000)
 

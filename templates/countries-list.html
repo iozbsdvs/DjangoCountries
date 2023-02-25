@@ -1,12 +1,11 @@
 {% extends 'base.html'%}
-
 {% block content %}
 
     <h1>Список стран:</h1>
 
     <ol>
         {% for country in countries %}
-        <li><a href="{% url 'page' country.id %}"> {{ country.country }}</a></li>
+        <li><a href="{% url 'country-page' country.id %}"> {{ country.country }}</a></li>
         {% endfor %}
     </ol>
 
