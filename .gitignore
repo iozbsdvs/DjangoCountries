@@ -1,6 +1,7 @@
 *venv/
 *venv
 *.pyc
+*.idea
 db.*
 /.DS_Store
 /src/.DS_Store

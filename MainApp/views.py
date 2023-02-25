@@ -21,9 +21,13 @@ def countries_list(request):
 
 def get_country(request, id):
     countries = Country.objects.get(id=id)
+    language = Languages.objects.all()
+
+    languages = language.filter(country=id)
 
     context = {
         "countries": countries,
+        "languages": languages
     }
 
     return render(request, 'country-page.html', context)
