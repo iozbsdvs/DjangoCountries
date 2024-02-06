@@ -5,7 +5,7 @@
 3. `pip install -r requirements.txt` - подключить все библиотеки проекта.
 4. `python manage.py migrate` - создать базу данных.
 5. `python manage.py runserver` - запустить сервер.
-6. `pip install freeze > requirements.txt` - обновить список библиотек по окончанию проекта.
+6. `pip freeze > requirements.txt` - обновить список библиотек по окончанию проекта.
 
 ## Запуск терминала в контексте django
 `python manage.py shell_plus --ipython`
